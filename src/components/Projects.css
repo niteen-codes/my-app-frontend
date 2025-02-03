@@ -1,0 +1,218 @@
+/* Projects Section Styling */
+.projects {
+    padding: 2rem 0;
+    /* background: linear-gradient(135deg, #6e7a8f, #4a5568); */
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  /* Content Styling */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Intro Section */
+  .projects-intro {
+    margin-bottom: 3rem;
+    
+  }
+  
+  .projects-intro-image {
+   margin-top: 2rem;
+   width: 300px;
+    
+  }
+  
+  .projects-intro-description {
+    font-size: 1.3rem;
+    color: #001c4e;
+    line-height: 1.8;
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+  
+  /* Section Title Styling */
+  .section-title {
+    /* font-size: 2rem; */
+    font-weight: bold;
+    color: #ffd700;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Projects Grid Styling */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  /* Project Card Styling */
+  .project-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Project Image */
+  .project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Project Info */
+  .project-info {
+    margin-top: 1rem;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    color: #114e86;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .project-description {
+    font-size: 1.1rem;
+    color: #001c4e;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .project-link {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: #45baf5;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+    color: #2563eb;
+    background-color: #f3f4f6;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-intro-image {
+      width: 70%;
+    }
+  
+    .project-card {
+      padding: 1.5rem;
+    }
+  
+    .section-title {
+      font-size: 2.5rem;
+    }
+  
+    .project-title {
+      font-size: 1.8rem;
+    }
+  
+    .project-description {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Tech Stack Styling */
+.project-info .project-tech-stack {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.project-info .project-tech-stack strong {
+    font-weight: bold;
+    color: #6c63ff; /* Accent color for tech stack label */
+}
+
+.project-info .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.project-info .tech-icon {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 8px 12px;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.project-info .tech-icon svg {
+    margin-right: 6px; /* Space between icon and text */
+    font-size: 18px; /* Adjust icon size */
+}
+
+.project-info .tech-icon:hover {
+    background-color: #6c63ff; /* Change background color on hover */
+    color: white; /* White text color on hover */
+    transform: translateY(-3px); /* Slight elevation on hover */
+}
+
+/* Responsive Design for Tech Stack */
+@media (max-width: 768px) {
+    .project-info .tech-icons {
+        justify-content: center; /* Center the icons on small screens */
+    }
+
+    .project-info .tech-icon {
+        font-size: 12px; /* Smaller font size on mobile */
+        padding: 6px 10px;
+    }
+}
+
+.tech-icon-img {
+  width: 20px;  /* Adjust the size as needed */
+  height: 20px;
+  margin-right: 8px; /* Space between icon and tech name */
+  filter: grayscale(100%) brightness(-5) invert(1);
+}
+
+

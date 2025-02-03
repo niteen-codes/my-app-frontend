@@ -1,0 +1,296 @@
+/* General Styles */
+#education {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+    color: #333;
+    
+}
+
+.education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-bottom: 0.5rem;
+    /* background: linear-gradient(135deg, #6e7a8f, #4a5568); */
+}
+
+.education-container h2 {
+    color: #333;
+}
+
+/* Section Title */
+.education-title {
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Education Cards */
+.education-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    
+}
+
+/* Blue Strip on Left Side */
+.education-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: #007bff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/* Hover Effect */
+.education-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Education Degree Title */
+.education-degree {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Institution Name */
+.education-institution {
+    color: #212325;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Year */
+.education-year {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+/* Description */
+.education-description {
+    margin-top: 1rem;
+    color: #555;
+}
+
+/* Degrees and Qualifications Intro Section */
+.degrees-intro {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.degrees-intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.degrees-intro-image {
+    width: 200px;
+    height: auto;
+}
+
+.degrees-intro-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Education Icons */
+.education-icon {
+    color: #3d668e;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+/* University Name & Logo Container */
+.education-university {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.education-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Certifications Section */
+.certifications-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    color: #353535;
+}
+
+/* Certification Cards */
+.certification-card {
+    background: #f2f5f5;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
+    position: relative;
+    
+}
+
+/* Left Stripes for Certification Card */
+.certification-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(180deg, #ff6a00, #f36f6f);
+    border-radius: 10px 0 0 10px;
+}
+
+/* Hover Effect */
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Certification Title */
+.certification-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #151414;
+}
+
+/* Institution */
+.certification-institution {
+    color: #151414;
+    font-weight: 600;
+}
+
+/* Duration */
+.certification-duration {
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+    color: #151414;
+}
+
+/* Description */
+.certification-description {
+    margin-top: 1rem;
+    color: #151414;
+}
+
+/* Certification Icons */
+.certification-icon {
+    margin-right: 10px;
+    color: #facc15;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Education Section */
+    .education-title {
+        font-size: 1.75rem;
+    }
+
+    /* Education Cards */
+    .education-card, .certification-card {
+        padding: 1rem;
+    }
+
+    /* Reduce Title Font Sizes */
+    .education-degree, .certification-title {
+        font-size: 1.25rem;
+    }
+
+    .education-institution {
+        font-size: 1rem;
+    }
+
+    .education-description, .certification-description {
+        font-size: 0.875rem;
+    }
+
+    .degrees-intro-title {
+        font-size: 1.25rem;
+        max-width: 90%;
+    }
+
+    .degrees-intro-image {
+        width: 150px;
+    }
+
+    /* Layout changes for smaller screens */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Reduce Padding */
+    .education-container {
+        padding: 0 1rem;
+    }
+
+    /* Degrees Intro Title */
+    .degrees-intro-title {
+        font-size: 1.2rem;
+    }
+
+    .education-title {
+        font-size: 1.5rem;
+    }
+
+    .education-degree {
+        font-size: 1.2rem;
+    }
+
+    .education-institution {
+        font-size: 0.875rem;
+    }
+
+    .education-year {
+        font-size: 0.75rem;
+    }
+
+    .education-description {
+        font-size: 0.75rem;
+    }
+
+    /* Certification Section */
+    .certifications-title {
+        font-size: 1.75rem;
+    }
+
+    .certification-title {
+        font-size: 1.2rem;
+    }
+
+    .certification-description {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,125 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #1a1a1a; /* Solid dark background */
+    transition: background-color 0.3s ease;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #ffffff !important;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 15px rgba(0, 123, 255, 0.9);
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin: 0 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px rgba(0, 123, 255, 0.9);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Scrolled navbar styling */
+.navbar.scrolled {
+    background-color: #333333 !important; /* Darker background on scroll */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar navigation styling */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    transition: transform 0.3s ease;
+}
+
+.nav-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 1rem 0;
+    }
+
+    /* Toggling Navbar Styles */
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    /* Navbar Toggler */
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+}
+
+/* Import the font in your CSS (if not using the HTML link) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Glowing and pulsating animation */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(0, 123, 255, 0.7), 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.7);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(0, 123, 255, 0.9), 0 0 20px rgba(0, 123, 255, 0.9), 0 0 30px rgba(0, 123, 255, 0.9);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(0, 123, 255, 0.7), 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.7);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.developer-name {
+    font-family: 'Poppins', sans-serif; /* Apply the custom font */
+    font-weight: 600; /* Bold font weight */
+    font-size: 1.8rem; /* Adjust font size */
+    letter-spacing: 2px; /* Add some letter spacing */
+    animation: glow 3s infinite ease-in-out, pulse 2s infinite ease-in-out;
+    display: inline-block; /* Ensures the transform works correctly */
+    color: #ffffff; /* Ensure the text color is white */
+}

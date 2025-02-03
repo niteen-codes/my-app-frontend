@@ -1,0 +1,327 @@
+/* Experience Section Styling */
+.experience {
+    padding: 2rem ;
+    /*  background: linear-gradient(135deg, #6e7a8f, #4a5568); */
+    color: #3c3939;
+    overflow: hidden;
+}
+
+.experience-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom CSS for the Experience Section */
+.experience h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #323232;
+    margin-bottom: 2rem;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: fadeInUp 1s ease-out;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.experience h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #1d4ed8;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.experience h2:hover::after {
+    width: 100%;
+}
+
+.experience p {
+    font-size: 1.2rem;
+    color: #212235;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: color 0.3s ease;
+}
+
+.experience p:hover {
+    color: #333;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate__animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@media (max-width: 768px) {
+    .experience h2 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .experience p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+/* Experience List Styling */
+.experience-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.experience-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.experience-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 123, 255, 0.4);
+}
+
+.experience-title {
+    font-size: 2rem;
+    color: #001c4e;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.experience-company {
+    font-size: 1.1rem;
+    color: #001c4e;
+    margin-bottom: 1rem;
+}
+
+.experience-description {
+    font-size: 1.1rem;
+    color:#999999;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.experience-technologies {
+    font-size: 1.1rem;
+    color: #fbbf24;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.tech-badge {
+    background-color: #111827;
+    color: #fbbf24;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.experience-company-link a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.experience-company-link a:hover {
+    text-decoration: underline;
+    color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience h2 {
+        font-size: 2.5rem;
+    }
+
+    .experience-list {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+        padding: 1.5rem;
+    }
+
+    .experience-title {
+        font-size: 1.8rem;
+    }
+
+    .experience-description, .experience-technologies {
+        font-size: 1rem;
+    }
+
+    .tech-badge {
+        font-size: 0.85rem;
+    }
+}
+
+/* Mobile Navigation (Right Side Toggle) */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: 100vh;
+        padding-top: 60px;
+        z-index: 999;
+    }
+
+    .nav-link {
+        padding: 10px;
+        font-size: 1.2rem;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-link:hover {
+        background-color: #4e73df;
+    }
+}
+
+/* Styling for the icons */
+.icon {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: #1d4ed8; /* Adjust color if needed */
+}
+
+.tech-icon {
+    font-size: 1.4rem;
+    color: #1d4ed8;
+    margin-right: 5px;
+}
+
+/* Styling for technologies list */
+.experience-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.technologies-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-item {
+    display: flex;
+    align-items: center;
+    background-color: #111827;
+    color: #fbbf24;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .icon {
+        font-size: 1.1rem;
+    }
+
+    .tech-item {
+        font-size: 0.85rem;
+        padding: 4px 8px;
+    }
+
+    .tech-icon {
+        font-size: 1.1rem;
+    }
+}
+
+/* Adjust layout for better alignment */
+.experience-title,
+.experience-company,
+.experience-description,
+.experience-technologies,
+.experience-company-link {
+    display: flex;
+    align-items: center;
+}
+
+.experience-title .icon,
+.experience-company .icon,
+.experience-description .icon,
+.experience-technologies .icon,
+.experience-company-link .icon {
+    color: #1d4ed8; /* You can set different colors for icons */
+}
+
+/* Hover effects */
+.tech-item:hover {
+    background-color: #3b4f76;
+    cursor: pointer;
+}
+
+
+.experience-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .experience-image {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+  
+  .experience-subheading {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  

@@ -1,0 +1,64 @@
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    flex-shrink: 0; /* Prevent the footer from shrinking */
+}
+
+.footer p {
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Add space between icons */
+}
+
+.social-links a {
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /* Slightly enlarge icons on hover */
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    color: #25d366; /* WhatsApp brand green */
+}
+
+.whatsapp-icon:hover {
+    color: #128c7e; /* Darker green on hover */
+}
+
+/* LinkedIn Icon */
+.linkedin-icon {
+    color: #0077b5; /* LinkedIn brand blue */
+}
+
+.linkedin-icon:hover {
+    color: #004471; /* Darker blue on hover */
+}
+
+/* GitHub Icon */
+.github-icon {
+    color: #333; /* GitHub brand black */
+}
+
+.github-icon:hover {
+    color: #000; /* Pure black on hover */
+}
+
+/* Instagram Icon */
+.instagram-icon {
+    color: #e4405f; /* Instagram brand pinkish red */
+}
+
+.instagram-icon:hover {
+    color: #bc2a8d; /* Darker pinkish red on hover */
+}
