@@ -4,6 +4,7 @@ import { IoLogoAngular, IoLogoJavascript, IoLogoPhp } from "react-icons/io";
 import { SiIonic, SiMysql, SiBootstrap } from "react-icons/si";
 import { motion } from "framer-motion";
 import "./Experience.css";
+import ExperienceCover from '../assets/ExperienceCover.svg';
 
 const Experience = () => {
   const experiences = [
@@ -34,7 +35,12 @@ const Experience = () => {
       >
         {/* Image and Text Section */}
         <div className="experience-header">
-          <img src="https://dhruvilrathod.me/assets/illustrations/ExperienceCover.svg" alt="Experience" className="experience-image" />
+        <img
+  src={ExperienceCover}
+  alt="Education Cover"
+  className="experience-image"
+/>
+        
           <h3 className="experience-subheading">
             💼 From Corporate Giants to Creative Freelance Projects: A Journey Through Internships, Challenges, Innovation and Community Involvements
           </h3>

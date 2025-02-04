@@ -1,7 +1,7 @@
 /* General Styles */
 #education {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background-color: #d8e0ed;
     color: #333;
     
 }
@@ -20,13 +20,33 @@
 
 /* Section Title */
 .education-title {
+    position: relative;
     font-size: 2.25rem;
     font-weight: 600;
     text-align: center;
-    margin-bottom: rem;
+    margin-bottom: 1rem; /* Adjusted to a valid value */
     color: #333;
+    padding-bottom: 4px;
     font-weight: bold;
 }
+
+.education-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #1d4ed8;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.education-title:hover::after {
+    width: 17%;
+}
+
 
 /* Education Cards */
 .education-card {

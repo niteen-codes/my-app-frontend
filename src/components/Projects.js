@@ -3,6 +3,9 @@ import { motion } from 'framer-motion'; // For smooth animations
 import { FaReact, FaJs, FaNodeJs, FaPython, FaJava, FaCss3, FaHtml5, FaDatabase } from 'react-icons/fa';
 import { SiTensorflow, SiKeras, SiFlask, SiFirebase, SiRedux, SiMysql, SiBootstrap } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
+import Travel from '../assets/Travel.jpg';
+import Fashion from '../assets/fashion.jpeg';
+import Sellwell from '../assets/SellWell.png';
 
 
 import './Projects.css';
@@ -29,7 +32,7 @@ const Projects = () => {
             id: 1,
             title: 'Tourist Destination',
             description: 'The Tourist Destination Project is an initiative aimed at showcasing and promoting specific locations as prime tourist attractions. Its goal is to highlight the unique features, cultural significance, and natural beauty of selected destinations, making them appealing to travelers from around the world.',
-            image: 'https://as2.ftcdn.net/v2/jpg/05/10/75/01/1000_F_510750167_SdgAKSuCTfwAqPW7issA7B6Ox4QbvSwi.jpg',
+            image: Travel,
             link: '#', // Add actual project link
             techStack: ['React', 'JavaScript', 'CSS', 'Java', 'SQL', 'Bootstrap', 'Hibernate']
         },
@@ -37,7 +40,7 @@ const Projects = () => {
             id: 2,
             title: 'Fashion Factory',
             description: 'Fashion Factory is a sleek online platform offering a curated collection of stylish clothing, accessories, and fashion products. Explore the latest trends, premium items, and exclusive designs, all available for effortless shopping from the comfort of your home.',
-            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbfH9MAuSJOTgA3NRVhGZFSwbiscO6VTwWBelsoWU0j5PkUyu328GOM120K2HDz82bgA&usqp=CAU',
+            image: Fashion,
             link: '#', // Add actual project link
             techStack: ['React', 'SQL', 'Spring Boot','Hibernate','JavaScript','HTML','Tailwind']
         },
@@ -45,7 +48,7 @@ const Projects = () => {
             id: 3,
             title: 'Sellwell',
             description: 'SellWell is an e-commerce platform designed to offer a seamless shopping experience for customers seeking high-quality crockery goods. Whether you are looking for elegant dinnerware, stylish tea sets, or practical kitchen essentials, SellWell has a wide variety of products to meet all your crockery needs.',
-            image: 'https://cdn.qwenlm.ai/output/42960f60-88da-42ef-a62b-48e1bfebca5c/t2i/2e24cc4d-f588-41c0-93ba-21cb9637a95a/d5e36d70-296b-4669-9593-9890cb57ac59.png',
+            image: Sellwell,
             link: '#', // Add actual project link
             techStack: ['Java', 'Spring Boot', 'SQL', 'CSS', 'Bootstrap', 'CORS']
         },

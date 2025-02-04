@@ -5,6 +5,7 @@ import {
   FaBookOpen, FaCertificate, FaBuilding 
 } from "react-icons/fa"; 
 import "./Education.css"; // Import the CSS file
+import EducationCover from '../assets/EducationCover.svg';
 
 const Education = () => {
   const educationData = [
@@ -34,13 +35,12 @@ const Education = () => {
       description:
         "A comprehensive program covering Java, Spring Boot, Hibernate, REST APIs, frontend technologies (React.js), and database management.",
     },
-
     {
       title: "Cloud Computing",
       institution: "National Programme on Technology Enhanced Learning",
       duration: "Mar 2023 - May 2023",
       description:
-        "Cloud computing is a technology that enables users to access and use computing resources like servers, storage, and software over the internet on a pay-as-you-go basis. Instead of owning physical infrastructure, users can rent these resources from providers like AWS, Azure, or Google Cloud. It offers scalability, cost-efficiency, and flexibility.",
+        "Cloud computing is a technology that enables users to access and use computing resources like servers, storage, and software over the internet on a pay-as-you-go basis.",
     },
   ];
 
@@ -56,7 +56,7 @@ const Education = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src="https://dhruvilrathod.me/assets/illustrations/EducationCover.svg"
+            src={EducationCover}
             alt="Education Cover"
             className="degrees-intro-image"
           />
@@ -86,28 +86,19 @@ const Education = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              {/* Degree */}
               <h3 className="education-degree">
                 <FaGraduationCap className="education-icon" /> {edu.degree}
               </h3>
-
-              {/* Institution */}
               <p className="education-institution">
                 <FaSchool className="education-icon" /> {edu.institution}
               </p>
-
-              {/* University */}
               <div className="education-university">
                 <FaUniversity className="education-icon" />
                 <span>{edu.university}</span>
               </div>
-
-              {/* Year */}
               <p className="education-year">
                 <FaCalendarAlt className="education-icon" /> {edu.year}
               </p>
-
-              {/* Description */}
               <p className="education-description">
                 <FaBookOpen className="education-icon" /> {edu.description}
               </p>
@@ -136,22 +127,15 @@ const Education = () => {
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
             >
-              {/* Certification Title */}
               <h3 className="certification-title">
                 <FaCertificate className="certification-icon" /> {cert.title}
               </h3>
-
-              {/* Institution */}
               <p className="certification-institution">
                 <FaBuilding className="certification-icon" /> {cert.institution}
               </p>
-
-              {/* Duration */}
               <p className="certification-duration">
                 <FaCalendarAlt className="certification-icon" /> {cert.duration}
               </p>
-
-              {/* Description */}
               <p className="certification-description">
                 <FaBookOpen className="certification-icon" /> {cert.description}
               </p>

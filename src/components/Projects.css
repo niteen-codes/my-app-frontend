@@ -37,17 +37,7 @@
     margin-top: 1.5rem;
   }
   
-  /* Section Title Styling */
-  .section-title {
-    /* font-size: 2rem; */
-    font-weight: bold;
-    color: #ffd700;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    letter-spacing: 3px;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
-    animation: fadeInUp 1s ease-out;
-  }
+  
   
   /* Projects Grid Styling */
   .projects-grid {
@@ -213,6 +203,34 @@
   height: 20px;
   margin-right: 8px; /* Space between icon and tech name */
   filter: grayscale(100%) brightness(-5) invert(1);
+}
+
+.section-title {
+  position: relative;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem; /* Adjusted to a valid value */
+  color: #333;
+  padding-bottom: 4px;
+  font-weight: bold;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #1d4ed8;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  width: 26%;
 }
 
 

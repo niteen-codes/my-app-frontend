@@ -1,7 +1,7 @@
 /* Contact Section */
 .contact {
     position: relative;
-    padding: 6rem 2rem;
+    padding: 8rem 2rem;
     background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     overflow: hidden;
 }
@@ -39,27 +39,30 @@
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -10px;
+    bottom: 0;
     width: 60px;
     height: 4px;
-    background: #1d4ed8;
+    background-color: #1d4ed8;
     transform: translateX(-50%);
     border-radius: 2px;
+    transition: width 0.3s ease;
 }
 
 .contact-form {
     max-width: 800px;
     margin: 0 auto;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
     padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
 }
 
 .contact-form .form-group {
@@ -79,16 +82,18 @@
     width: 100%;
     padding: 0.8rem;
     font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #ddd;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     outline: none;
     transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #1d4ed8;
-    box-shadow: 0 0 8px rgba(0, 180, 148, 0.3);
+    box-shadow: 0 0 12px rgba(29, 78, 216, 0.3);
+    background: rgba(255, 255, 255, 1);
 }
 
 .contact-form textarea {
@@ -97,35 +102,91 @@
 }
 
 .contact-form button {
-    background-color: #00b894;
+    background: linear-gradient(135deg, #00b894, #6c5ce7);
     color: white;
     border: none;
     font-size: 1.2rem;
     padding: 1rem 2rem;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form button:hover {
-    background-color: #6c5ce7;
+    background: linear-gradient(135deg, #6c5ce7, #00b894);
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(108, 92, 231, 0.3);
+    box-shadow: 0 6px 12px rgba(108, 92, 231, 0.4);
 }
 
 .contact-form button:active {
-    background-color: #d63031;
     transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: #aaa;
     font-style: italic;
+}
+
+/* Loading Spinner */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #00b894;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Status Message */
+.message-container {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 20px auto 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-message {
+    background-color: rgba(212, 237, 218, 0.9);
+    border: 1px solid rgba(195, 230, 203, 0.9);
+    color: #155724;
+}
+
+.error-message {
+    background-color: rgba(248, 215, 218, 0.9);
+    border: 1px solid rgba(245, 198, 203, 0.9);
+    color: #721c24;
 }
 
 /* Mobile Responsiveness */
@@ -161,55 +222,4 @@
         font-size: 0.9rem;
         padding: 0.7rem 1.2rem;
     }
-}
-
-/* Loading Spinner */
-.loading-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(5px);
-    z-index: 9999;
-}
-
-.spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #3498db;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Status Message */
-.message-container {
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 600px;
-    margin: 20px auto 0;
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-}
-
-.success-message {
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
-    color: #155724;
-}
-
-.error-message {
-    background-color: #f8d7da;
-    border: 1px solid #f5c6cb;
-    color: #721c24;
 }

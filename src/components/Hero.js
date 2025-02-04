@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ClipLoader } from 'react-spinners'; // Import a spinner from react-spinners
 import './Hero.css';
+import FullstackDev from '../assets/FullStackDevelopment.svg';
+import AppDev from '../assets/AppDevelopment.jpeg';
+import UIUX from '../assets/UIUXDesign.svg';
+import Database from '../assets/database-for-web-applications.webp';
 
 const Hero = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -99,7 +103,7 @@ const Hero = () => {
                         >
                             <div className="service-card-content">
                                 <img
-                                    src="https://dhruvilrathod.me/assets/illustrations/FullStackDevelopment.svg"
+                                    src={FullstackDev}
                                     alt="Fullstack Development"
                                     className="service-image"
                                 />
@@ -132,7 +136,7 @@ const Hero = () => {
                                     </ul>
                                 </div>
                                 <img
-                                    src="https://dhruvilrathod.me/assets/illustrations/UIUXDesign.svg"
+                                    src={UIUX}
                                     alt="UI/UX"
                                     className="service-image"
                                 />
@@ -147,9 +151,9 @@ const Hero = () => {
                             transition={{ duration: 0.8, delay: 1.6 }}
                         >
                             <div className="service-card-content">
-                                <img
-                                    src="https://media.licdn.com/dms/image/D4D12AQH0atLBfgO-ew/article-cover_image-shrink_720_1280/0/1698822351078?e=2147483647&v=beta&t=yfpE1z7STX4mLYwUJQj6YEOK67nIFFvxwDkKW8aDdb0"
-                                    alt="App Development"
+                            <img
+                                    src={AppDev}
+                                    alt="AppDev"
                                     className="service-image"
                                 />
                                 <div className="service-text">
@@ -180,8 +184,8 @@ const Hero = () => {
                                     </ul>
                                 </div>
                                 <img
-                                    src="https://www.simpalm.com/wp-content/uploads/database-for-web-applications.webp"
-                                    alt="Database Management"
+                                    src={Database}
+                                    alt="Database"
                                     className="service-image"
                                 />
                             </div>
