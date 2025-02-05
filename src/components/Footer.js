@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="container">
                 <p>&copy; 2025 My Portfolio. All rights reserved.</p>
                 <div className="social-links">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/niteen-codes" target="_blank" rel="noopener noreferrer">
                         <FaGithub className="icon github-icon" />
                     </a>
                     <a href="https://www.linkedin.com/in/niteen-jha-35a594264" target="_blank" rel="noopener noreferrer">

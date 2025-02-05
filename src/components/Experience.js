@@ -1,6 +1,6 @@
 import React from "react";
-import { FaBriefcase, FaBuilding, FaCalendarAlt, FaCommentDots, FaTools, FaLink } from "react-icons/fa";
-import { IoLogoAngular, IoLogoJavascript, IoLogoPhp } from "react-icons/io";
+import { FaBriefcase, FaBuilding, FaCommentDots, FaTools, FaLink } from "react-icons/fa";
+import { IoLogoAngular, IoLogoJavascript } from "react-icons/io";
 import { SiIonic, SiMysql, SiBootstrap } from "react-icons/si";
 import { motion } from "framer-motion";
 import "./Experience.css";
