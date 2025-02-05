@@ -12,8 +12,8 @@ const Contact = () => {
     const [status, setStatus] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    // Use the environment variable for API URL or hardcode if necessary
-    const API_URL = process.env.REACT_APP_API_URL || 'https://my-app-backend-232q.onrender.com';
+    // Use the deployed backend URL
+    const API_URL = 'https://my-app-backend-v1wt.onrender.com';
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;
