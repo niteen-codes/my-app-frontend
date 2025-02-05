@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a19aaa9.css",
+    "main.js": "/static/js/main.c36cc3c2.js",
+    "static/js/488.f1ad4097.chunk.js": "/static/js/488.f1ad4097.chunk.js",
+    "static/media/SellWell.png": "/static/media/SellWell.6f308bd48a0e3d70770f.png",
+    "static/media/Travel.jpg": "/static/media/Travel.e9f964ef7b8656ffcfe0.jpg",
+    "static/media/database-for-web-applications.webp": "/static/media/database-for-web-applications.1b7f5b142526a3853cf8.webp",
+    "static/media/AppDevelopment.jpeg": "/static/media/AppDevelopment.7f559d99e507f00635a7.jpeg",
+    "static/media/UIUXDesign.svg": "/static/media/UIUXDesign.75a6f41a2f5efde7bbb97f998e46361b.svg",
+    "static/media/Hero.jpg": "/static/media/Hero.1a71a8e659d95e71b8fc.jpg",
+    "static/media/ExperienceCover.svg": "/static/media/ExperienceCover.d5543ce0a2e3339710c793d571518784.svg",
+    "static/media/FullStackDevelopment.svg": "/static/media/FullStackDevelopment.7bee8068caee4a50674e88a2e1ac8d93.svg",
+    "static/media/EducationCover.svg": "/static/media/EducationCover.f7fcb2bfd93ff9de0258cafa109039fe.svg",
+    "index.html": "/index.html",
+    "main.9a19aaa9.css.map": "/static/css/main.9a19aaa9.css.map",
+    "main.c36cc3c2.js.map": "/static/js/main.c36cc3c2.js.map",
+    "488.f1ad4097.chunk.js.map": "/static/js/488.f1ad4097.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a19aaa9.css",
+    "static/js/main.c36cc3c2.js"
+  ]
+}
