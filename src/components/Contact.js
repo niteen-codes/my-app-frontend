@@ -13,7 +13,7 @@ const Contact = () => {
     const [loading, setLoading] = useState(false);
 
     // Use the deployed backend URL
-    const API_URL = 'https://my-app-backend-v1wt.onrender.com';
+    const API_URL = 'https://my-app-backend-porfolio.onrender.com';
 
     const handleInputChange = (e) => {
         const { id, value } = e.target;
